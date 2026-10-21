@@ -21,7 +21,7 @@ export default function Home() {
           <Text style={styles.texto_botao}>Entrar</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </View> 
   );
 }
 
