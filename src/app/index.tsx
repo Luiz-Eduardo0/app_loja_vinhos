@@ -29,7 +29,11 @@ export default function HomeLLLD() {
         </TouchableOpacity>
       </View>
 
-    </View>
+    </View> 
+
+
+    
+
   );
 }
 
