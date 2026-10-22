@@ -4,31 +4,36 @@ import { StyleSheet, View, Text, TouchableOpacity, Image, TextInput } from 'reac
 import { useRouter } from 'expo-router';
 import { MaterialIcons } from '@expo/vector-icons';
 
-export default function Login() {
+export default function LoginLLLD() {
   // push - navegar para outra tela, podendo voltar
   // back - voltar para a tela anterior
   // replace - navegar para outra tela, sem poder voltar
 
   const router = useRouter();
 
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
-  const [erro, setErro] = useState('');
+  const [emailLLLD, setEmailLLLD] = useState('');
+  const [senhaLLLD, setSenhaLLLD] = useState('');
+  const [erroLLLD, setErroLLLD] = useState('');
 
-  const handleLogin = () => {
-    setErro('');
-    if (!email.trim() || !senha.trim()) {
-      setErro('Por favor, preencha todos os campos.');
+  const handleLoginLLLD = () => {
+    setErroLLLD('');
+    if (!emailLLLD.trim() || !senhaLLLD.trim()) {
+      setErroLLLD('Por favor, preencha todos os campos.');
       return;
     }
 
-    if(!email.includes('@')) {
-      setErro('Por favor, insira um email válido.');
+    if(!emailLLLD.includes('@')) {
+      setErroLLLD('Por favor, insira um email válido.');
       return;
     }
 
-    if (senha.length < 8) {
-      setErro('A senha deve ter pelo menos 8 caracteres.');
+    if (senhaLLLD.length < 8) {
+      setErroLLLD('A senha deve ter pelo menos 8 caracteres.');
+      return;
+    }
+
+    if(emailLLLD != 'buddy@gmail.com' || senhaLLLD != 'buddy123') {
+      setErroLLLD('Email ou senha incorretos.');
       return;
     }
 
@@ -40,7 +45,7 @@ export default function Login() {
 
       <StatusBar style="light" />
 
-      {erro ? <Text style={styles.erro}>{erro}</Text> : null}
+      {erroLLLD ? <Text style={styles.erro}>{erroLLLD}</Text> : null}
 
       <View style={styles.imageContainer}>
         <Image source={require('../../../assets/login.jpeg')} style={styles.image} resizeMode="contain"/>
@@ -51,10 +56,10 @@ export default function Login() {
 
             <View style={styles.inputContainer}>
                 <MaterialIcons name="email" size={24} color="#f8b75e" style={styles.icon} />
-                <TextInput style={styles.input} placeholder="Email" value={email} 
+                <TextInput style={styles.input} placeholder="Email" value={emailLLLD} 
                 onChangeText={(text) => {
-                    setEmail(text);
-                    if (erro) setErro('');
+                    setEmailLLLD(text);
+                    if (erroLLLD) setErroLLLD('');
                 }}
                 autoCapitalize="none" keyboardType="email-address"/>
             </View>
@@ -62,10 +67,10 @@ export default function Login() {
 
             <View style={styles.inputContainer}>
                 <MaterialIcons name="lock" size={24} color="#f8b75e" style={styles.icon} />
-                <TextInput style={styles.input} secureTextEntry={true} placeholder="Senha" value={senha} 
+                <TextInput style={styles.input} secureTextEntry={true} placeholder="Senha" value={senhaLLLD} 
                 onChangeText={(text) => {
-                    setSenha(text);
-                    if (erro) setErro('');
+                    setSenhaLLLD(text);
+                    if (erroLLLD) setErroLLLD('');
                 }} />
             </View>
             <Text style={{color: '#c1c1c1', fontSize: 16, textAlign: 'left', marginBottom: 10}}>Mínimo de 8 caracteres</Text>
@@ -74,7 +79,7 @@ export default function Login() {
 
         <TouchableOpacity
           style={styles.botao}
-          onPress={handleLogin}
+          onPress={handleLoginLLLD}
         >
           <Text style={styles.texto_botao}>Entrar</Text>
         </TouchableOpacity>
