@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 
-export default function Home() {
+export default function HomeLLLD() {
   // push - navegar para outra tela, podendo voltar
   // back - voltar para a tela anterior
   // replace - navegar para outra tela, sem poder voltar
