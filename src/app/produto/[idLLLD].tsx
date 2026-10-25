@@ -66,6 +66,7 @@ return (
         <Text onPress={curtir}>{exibircoracaoLLLD ? <AntDesign name="heart" size={24} color="red" /> : <AntDesign name="heart" size={24} color="black" /> }</Text>
       </View>
       
+      <Text style={styles.tipoLLLD}>{produtoLLLD.tipoLLLD}</Text>
       <Image
         source={{ uri: produtoLLLD.imagemLLLD }}
         style={styles.imageLLLD}
@@ -113,12 +114,23 @@ const styles = StyleSheet.create({
     display:"flex",
     flexDirection:"row",
     justifyContent:"space-between",
-    marginBottom:20,
+    marginBottom:5,
   },
   containerLLLD: {
     flexGrow: 1,
     padding: 16,
     backgroundColor: "#f9f6f0",
+  },
+  tipoLLLD: {
+    fontSize: 34,
+    fontWeight: "bold",
+    marginTop: 16,
+    color: "#ffffff",
+    backgroundColor: "#741b47",
+    padding: 8,
+    borderRadius: 4,
+    fontFamily: "Arvo_700Bold",
+    marginBottom:10,
   },
   imageLLLD: {
     width:"100%",
@@ -131,12 +143,12 @@ const styles = StyleSheet.create({
   nomeLLLD: {
     fontSize: 24,
     fontWeight: "bold",
-    marginTop: 16,
     color: "#ffffff",
     backgroundColor: "#741b47",
     padding: 8,
     borderRadius: 4,
     fontFamily: "Arvo_700Bold",
+    marginTop:10,
   },
   avaliacaoLLLD: {
     fontSize: 16,

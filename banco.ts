@@ -1,7 +1,7 @@
 export const banco=[
     {
         idLLLD:1,
-        tipoLLLD:"tinto",
+        tipoLLLD:"Tinto",
         nomeLLLD:"Masi Mazzano Amarone della Valpolicella Classico DOC 2004",
         estrelasLLLD:4.2,
         avaliacaoLLLD:100,
@@ -13,7 +13,7 @@ export const banco=[
     },
     {
         idLLLD:2,
-        tipoLLLD:"tinto",
+        tipoLLLD:"Tinto",
         nomeLLLD:"Maison Ginestet Signature Collection Grand Vin de Margaux AOP",
         estrelasLLLD:4.6,
         avaliacaoLLLD:1043,
@@ -25,7 +25,7 @@ export const banco=[
     } ,
     {
         idLLLD:3,
-        tipoLLLD:"tinto",
+        tipoLLLD:"Tinto",
         nomeLLLD:"António Maçanita Fitapreta O Iluminista Tinto VR Alentejano",
         estrelasLLLD:3.9,
         avaliacaoLLLD:700,
@@ -37,7 +37,7 @@ export const banco=[
     },
     {
         idLLLD:4,
-        tipoLLLD:"tinto",
+        tipoLLLD:"Tinto",
         nomeLLLD:"Siegel Handpicked Reserva Carmenere",
         estrelasLLLD:4.0,
         avaliacaoLLLD:709,
@@ -49,7 +49,7 @@ export const banco=[
     },
     {
         idLLLD:5,
-        tipoLLLD:"tinto"    ,
+        tipoLLLD:"Tinto"    ,
         nomeLLLD:"Fanti Rosso di Montalcino DOC",
         estrelasLLLD:3.2,
         avaliacaoLLLD:390,
@@ -61,7 +61,7 @@ export const banco=[
     },
     {
         idLLLD:6,
-        tipoLLLD:"tinto",
+        tipoLLLD:"Tinto",
         nomeLLLD:"CVNE Viña Real Gran Reserva Especial Rioja DOCa 2017",
         estrelasLLLD:3.7,
         avaliacaoLLLD:494,
@@ -73,7 +73,7 @@ export const banco=[
     },
     {
         idLLLD:7,
-        tipoLLLD:"tinto",
+        tipoLLLD:"Tinto",
         nomeLLLD:"Viña Cobos Volturno 2017",
         estrelasLLLD:4.8,
         avaliacaoLLLD:190,
@@ -85,7 +85,7 @@ export const banco=[
     },
     {
         idLLLD:8,
-        tipoLLLD:"tinto",
+        tipoLLLD:"Tinto",
         nomeLLLD:"Kit 6 Viña Cobos Cocodrilo Corte",
         estrelasLLLD:4.7,
         avaliacaoLLLD:687,
@@ -97,7 +97,7 @@ export const banco=[
     } ,
     {
         idLLLD:9,
-        tipoLLLD:"branco",
+        tipoLLLD:"Branco",
         nomeLLLD:"Domaine William Fevre Chablis Grand Cru Les Clos AOC 2018",
         estrelasLLLD:4.5,
         avaliacaoLLLD:134,
@@ -109,7 +109,7 @@ export const banco=[
     },
     {
         idLLLD:10,
-        tipoLLLD:"branco",
+        tipoLLLD:"Branco",
         nomeLLLD:"Bojador Amphora Branco Alentejo DOC",
         estrelasLLLD:4.8,
         avaliacaoLLLD:1094,
@@ -121,7 +121,7 @@ export const banco=[
     },
     {
         idLLLD:11,
-        tipoLLLD:"branco",
+        tipoLLLD:"Branco",
         nomeLLLD:"Niepoort Tiara Branco Douro DOC 2023",
         estrelasLLLD:3.7,
         avaliacaoLLLD:1893,
@@ -133,7 +133,7 @@ export const banco=[
     },
     {
         idLLLD:12,
-        tipoLLLD:"branco",
+        tipoLLLD:"Branco",
         nomeLLLD:"Siegel Handpicked Reserva Sauvignon Blanc",
         estrelasLLLD:4.3,
         avaliacaoLLLD:1583,
@@ -145,7 +145,7 @@ export const banco=[
     },
      {
         idLLLD:13,
-        tipoLLLD:"branco",
+        tipoLLLD:"Branco",
         nomeLLLD:"Viña Cobos Zingaretti Estate Chardonnay 2023",
         estrelasLLLD:2.9,
         avaliacaoLLLD:893,
@@ -157,7 +157,7 @@ export const banco=[
     },
     {
         idLLLD:14,
-        tipoLLLD:"branco",
+        tipoLLLD:"Branco",
         nomeLLLD:"Zuccardi Fósil Chardonnay 2023",
         estrelasLLLD:2.9,
         avaliacaoLLLD:825,
@@ -169,7 +169,7 @@ export const banco=[
     } ,
     {
         idLLLD:15,
-        tipoLLLD:"branco",
+        tipoLLLD:"Branco",
         nomeLLLD:"Barone Montalto Maioliche Pinot Grigio Terre Siciliane IGT",
         estrelasLLLD:5.0,
         avaliacaoLLLD:670,
@@ -181,7 +181,7 @@ export const banco=[
     },
     {
         idLLLD:16,
-        tipoLLLD:"branco",
+        tipoLLLD:"Branco",
         nomeLLLD:"FitaPreta António Maçanita O Ancestral",
         estrelasLLLD:4.3,
         avaliacaoLLLD:1287,
@@ -193,7 +193,7 @@ export const banco=[
     },
     {
         idLLLD:17,
-        tipoLLLD:"rose",
+        tipoLLLD:"Rose",
         nomeLLLD:"Masi Rosa Dei Masi Rosato Trevenezie IGT",
         estrelasLLLD:2.9,
         avaliacaoLLLD:1986,
@@ -205,7 +205,7 @@ export const banco=[
     },
     {
         idLLLD:18,
-        tipoLLLD:"rose",
+        tipoLLLD:"Rose",
         nomeLLLD:"Estandon Brise Maritime Rosé Méditerranée IGP",
         estrelasLLLD:3.5,
         avaliacaoLLLD:1874,
@@ -217,7 +217,7 @@ export const banco=[
     },
     {
         idLLLD:19,
-        tipoLLLD:"rose",
+        tipoLLLD:"Rose",
         nomeLLLD:"Pulenta La Flor Malbec Rosé",
         estrelasLLLD:2.8,
         avaliacaoLLLD:1098,
@@ -229,7 +229,7 @@ export const banco=[
     },
     {
         idLLLD:20,
-        tipoLLLD:"rose",
+        tipoLLLD:"Rose",
         nomeLLLD:"Domaine Lafage Miraflors Côtes Catalanes IGP",
         estrelasLLLD:4.2,
         avaliacaoLLLD:2098,
@@ -241,7 +241,7 @@ export const banco=[
     } ,
     {
         idLLLD:21,
-        tipoLLLD:"rose",
+        tipoLLLD:"Rose",
         nomeLLLD:"laneta Rosé Sicilia DOC",
         estrelasLLLD:3.3,
         avaliacaoLLLD:298,
@@ -253,7 +253,7 @@ export const banco=[
     },
     {
         idLLLD:22,
-        tipoLLLD:"rose",
+        tipoLLLD:"Rose",
         nomeLLLD:"Xavier Vignon Rosé Côtes du Rhône AOP",
         estrelasLLLD:4.1,
         avaliacaoLLLD:1984,
@@ -265,7 +265,7 @@ export const banco=[
     },
     {
         idLLLD:23,
-        tipoLLLD:"rose",
+        tipoLLLD:"Rose",
         nomeLLLD:"Vallado Lote de Família Touriga Nacional Rosé Douro DOC",
         estrelasLLLD:3.7,
         avaliacaoLLLD:1037,
@@ -277,7 +277,7 @@ export const banco=[
     },
     {
         idLLLD:24,
-        tipoLLLD:"rose",
+        tipoLLLD:"Rose",
         nomeLLLD:"Maison Brotte Eden Rosé Méditerranée IGP",
         estrelasLLLD:4.1,
         avaliacaoLLLD:1026,
@@ -289,7 +289,7 @@ export const banco=[
     },
         {
         idLLLD:25,
-        tipoLLLD:"espumante",
+        tipoLLLD:"Espumante",
         nomeLLLD:"Victoria Geisse Cuvée Sofia",
         estrelasLLLD:2.9,
         avaliacaoLLLD:1986,
@@ -301,7 +301,7 @@ export const banco=[
     },
     {
         idLLLD:26,
-        tipoLLLD:"espumante",
+        tipoLLLD:"Espumante",
         nomeLLLD:"Espumante Gramona III Lustros Gran Reserva Brut Nature 2013",
         estrelasLLLD:3.5,
         avaliacaoLLLD:1874,
@@ -313,7 +313,7 @@ export const banco=[
     },
     {
         idLLLD:27,
-        tipoLLLD:"espumante",
+        tipoLLLD:"Espumante",
         nomeLLLD:"Espumante Rivarose Brut Rosé",
         estrelasLLLD:2.8,
         avaliacaoLLLD:1098,
@@ -325,7 +325,7 @@ export const banco=[
     },
     {
         idLLLD:28,
-        tipoLLLD:"espumante",
+        tipoLLLD:"Espumante",
         nomeLLLD:"Villa Sandi Asolo Nero Prosecco Superiore Extra Brut DOCG",
         estrelasLLLD:4.2,
         avaliacaoLLLD:2098,
@@ -337,7 +337,7 @@ export const banco=[
     } ,
     {
         idLLLD:29,
-        tipoLLLD:"espumante",
+        tipoLLLD:"Espumante",
         nomeLLLD:"Villa Sandi Il Fresco Prosecco DOC Treviso Brut",
         estrelasLLLD:3.3,
         avaliacaoLLLD:298,
@@ -349,7 +349,7 @@ export const banco=[
     },
     {
         idLLLD:30,
-        tipoLLLD:"espumante",
+        tipoLLLD:"Espumante",
         nomeLLLD:"Villa Sandi Il Fresco Brut Blanc de Blancs Spumante",
         estrelasLLLD:4.1,
         avaliacaoLLLD:1984,
@@ -361,7 +361,7 @@ export const banco=[
     },
     {
         idLLLD:31,
-        tipoLLLD:"espumante",
+        tipoLLLD:"Espumante",
         nomeLLLD:"Champagne Veuve A. Devaux Grande Réserve Brut",
         estrelasLLLD:3.7,
         avaliacaoLLLD:1037,
@@ -373,7 +373,7 @@ export const banco=[
     },
     {
         idLLLD:32,
-        tipoLLLD:"espumante",
+        tipoLLLD:"Espumante",
         nomeLLLD:"Il Fresco Prosecco DOC Rosé Millesimato",
         estrelasLLLD:4.1,
         avaliacaoLLLD:1026,
