@@ -20,7 +20,7 @@ useState('Todos');
   ];
 
 return (
-  <ScrollView>
+<ScrollView>
   <View style={stylesLLLD.container}>
    <StatusBar barStyle="light-content"/>
     <View style={stylesLLLD.header}>
@@ -87,148 +87,164 @@ return (
             );
         })}
     </ScrollView>
-  </View>
-   <View style={stylesLLLD.main}>
-   
-               <View style={stylesLLLD.slot}>
-             <Link href={"/produto/1"}>
-                 <View style={stylesLLLD.card}>
-                     <View style={stylesLLLD.imagemfundo}>
-                         <Image
-                           style={stylesLLLD.imagem}
-                           source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
-                           />
-                     </View>
-                     <Text style={stylesLLLD.nome}><b>Casca de bala</b></Text>
-                     <Text style={stylesLLLD.subnome}>amostradinho</Text>
-                     <View style={stylesLLLD.baixo}>
-                         <Text style={stylesLLLD.preco}>$00,00</Text>
-                         <TouchableOpacity>
-                           <Text style={stylesLLLD.botao}>+</Text>
-                         </TouchableOpacity>
-                     </View>
-                 </View>
-                 </Link>
-                 <View style={stylesLLLD.card}>
-                     <View style={stylesLLLD.imagemfundo}>
-                         <Image
-                           style={stylesLLLD.imagem}
-                           source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
-                           />
-                     </View>
-                     <Text style={stylesLLLD.nome}><b>Casca de bala</b></Text>
-                     <Text style={stylesLLLD.subnome}>amostradinho</Text>
-                     <View style={stylesLLLD.baixo}>
-                         <Text style={stylesLLLD.preco}>$00,00</Text>
-                         <TouchableOpacity>
-                           <Text style={stylesLLLD.botao}>+</Text>
-                         </TouchableOpacity>
-                     </View>
-                 </View> 
-               </View>
-               <View style={stylesLLLD.slot}>
-                 <View style={stylesLLLD.card}>
-                     <View style={stylesLLLD.imagemfundo}>
-                         <Image
-                           style={stylesLLLD.imagem}
-                           source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
-                           />
-                     </View>
-                     <Text style={stylesLLLD.nome}><b>Casca de bala</b></Text>
-                     <Text style={stylesLLLD.subnome}>amostradinho</Text>
-                     <View style={stylesLLLD.baixo}>
-                         <Text style={stylesLLLD.preco}>$00,00</Text>
-                         <TouchableOpacity>
-                           <Text style={stylesLLLD.botao}>+</Text>
-                         </TouchableOpacity>
-                     </View>
-                 </View> 
-                 <View style={stylesLLLD.card}>
-                     <View style={stylesLLLD.imagemfundo}>
-                         <Image
-                           style={stylesLLLD.imagem}
-                           source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
-                           />
-                     </View>
-                     <Text style={stylesLLLD.nome}><b>Casca de bala</b></Text>
-                     <Text style={stylesLLLD.subnome}>amostradinho</Text>
-                     <View style={stylesLLLD.baixo}>
-                         <Text style={stylesLLLD.preco}>$00,00</Text>
-                         <TouchableOpacity>
-                           <Text style={stylesLLLD.botao}>+</Text>
-                         </TouchableOpacity>
-                     </View>
-                 </View> 
-               </View>
-               <View style={stylesLLLD.slot}>
-                 <View style={stylesLLLD.card}>
-                     <View style={stylesLLLD.imagemfundo}>
-                         <Image
-                           style={stylesLLLD.imagem}
-                           source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
-                           />
-                     </View>
-                     <Text style={stylesLLLD.nome}><b>Casca de bala</b></Text>
-                     <Text style={stylesLLLD.subnome}>amostradinho</Text>
-                     <View style={stylesLLLD.baixo}>
-                         <Text style={stylesLLLD.preco}>$00,00</Text>
-                         <TouchableOpacity>
-                           <Text style={stylesLLLD.botao}>+</Text>
-                         </TouchableOpacity>
-                     </View>
-                 </View> 
-                 <View style={stylesLLLD.card}>
-                     <View style={stylesLLLD.imagemfundo}>
-                         <Image
-                           style={stylesLLLD.imagem}
-                           source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
-                           />
-                     </View>
-                     <Text style={stylesLLLD.nome}><b>Casca de bala</b></Text>
-                     <Text style={stylesLLLD.subnome}>amostradinho</Text>
-                     <View style={stylesLLLD.baixo}>
-                         <Text style={stylesLLLD.preco}>$00,00</Text>
-                         <TouchableOpacity>
-                           <Text style={stylesLLLD.botao}>+</Text>
-                         </TouchableOpacity>
-                     </View>
-                 </View> 
-               </View>
-               <View style={stylesLLLD.slot}>
-                 <View style={stylesLLLD.card}>
-                     <View style={stylesLLLD.imagemfundo}>
-                         <Image
-                           style={stylesLLLD.imagem}
-                           source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
-                           />
-                     </View>
-                     <Text style={stylesLLLD.nome}><b>Casca de bala</b></Text>
-                     <Text style={stylesLLLD.subnome}>amostradinho</Text>
-                     <View style={stylesLLLD.baixo}>
-                         <Text style={stylesLLLD.preco}>$00,00</Text>
-                         <TouchableOpacity>
-                           <Text style={stylesLLLD.botao}>+</Text>
-                         </TouchableOpacity>
-                     </View>
-                 </View> 
-                 <View style={stylesLLLD.card}>
-                     <View style={stylesLLLD.imagemfundo}>
-                         <Image
-                           style={stylesLLLD.imagem}
-                           source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
-                           />
-                     </View>
-                     <Text style={stylesLLLD.nome}><b>Casca de bala</b></Text>
-                     <Text style={stylesLLLD.subnome}>amostradinho</Text>
-                     <View style={stylesLLLD.baixo}>
-                         <Text style={stylesLLLD.preco}>$00,00</Text>
-                         <TouchableOpacity>
-                           <Text style={stylesLLLD.botao}>+</Text>
-                         </TouchableOpacity>
-                     </View>
-                 </View> 
-               </View>
-           </View>
+    </View>
+    <View style={stylesLLLD.main}>
+    
+                <View style={stylesLLLD.slot}>
+              <Link href={"/produto/1"}>
+                  <View style={stylesLLLD.card}>
+                      <View style={stylesLLLD.imagemfundo}>
+                          <Image
+                            style={stylesLLLD.imagem}
+                            source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
+                            />
+                      </View>
+                      <View>
+                        <Text style={stylesLLLD.nome}>Casca de bala</Text>
+                        <Text style={stylesLLLD.subnome}>amostradinho</Text>
+                      </View>
+                      <View style={stylesLLLD.baixo}>
+                          <Text style={stylesLLLD.preco}>$00,00</Text>
+                          <TouchableOpacity>
+                            <Text style={stylesLLLD.botao}>+</Text>
+                          </TouchableOpacity>
+                      </View>
+                  </View>
+                  </Link>
+                  <View style={stylesLLLD.card}>
+                      <View style={stylesLLLD.imagemfundo}>
+                          <Image
+                            style={stylesLLLD.imagem}
+                            source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
+                            />
+                      </View>
+                      <View>
+                         <Text style={stylesLLLD.nome}>Casca de bala</Text>
+                         <Text style={stylesLLLD.subnome}>amostradinho</Text>
+                      </View>
+                      <View style={stylesLLLD.baixo}>
+                          <Text style={stylesLLLD.preco}>$00,00</Text>
+                          <TouchableOpacity>
+                            <Text style={stylesLLLD.botao}>+</Text>
+                          </TouchableOpacity>
+                      </View>
+                  </View> 
+                </View>
+                <View style={stylesLLLD.slot}>
+                  <View style={stylesLLLD.card}>
+                      <View style={stylesLLLD.imagemfundo}>
+                          <Image
+                            style={stylesLLLD.imagem}
+                            source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
+                            />
+                      </View>
+                      <View>
+                         <Text style={stylesLLLD.nome}>Casca de bala</Text>
+                         <Text style={stylesLLLD.subnome}>amostradinho</Text>
+                      </View>
+                      <View style={stylesLLLD.baixo}>
+                          <Text style={stylesLLLD.preco}>$00,00</Text>
+                          <TouchableOpacity>
+                            <Text style={stylesLLLD.botao}>+</Text>
+                          </TouchableOpacity>
+                      </View>
+                  </View> 
+                  <View style={stylesLLLD.card}>
+                      <View style={stylesLLLD.imagemfundo}>
+                          <Image
+                            style={stylesLLLD.imagem}
+                            source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
+                            />
+                      </View>
+                      <View>
+                         <Text style={stylesLLLD.nome}>Casca de bala</Text>
+                         <Text style={stylesLLLD.subnome}>amostradinho</Text>
+                      </View>
+                      <View style={stylesLLLD.baixo}>
+                          <Text style={stylesLLLD.preco}>$00,00</Text>
+                          <TouchableOpacity>
+                            <Text style={stylesLLLD.botao}>+</Text>
+                          </TouchableOpacity>
+                      </View>
+                  </View> 
+                </View>
+                <View style={stylesLLLD.slot}>
+                  <View style={stylesLLLD.card}>
+                      <View style={stylesLLLD.imagemfundo}>
+                          <Image
+                            style={stylesLLLD.imagem}
+                            source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
+                            />
+                      </View>
+                      <View>
+                         <Text style={stylesLLLD.nome}>Casca de bala</Text>
+                         <Text style={stylesLLLD.subnome}>amostradinho</Text>
+                      </View>
+                      <View style={stylesLLLD.baixo}>
+                          <Text style={stylesLLLD.preco}>$00,00</Text>
+                          <TouchableOpacity>
+                            <Text style={stylesLLLD.botao}>+</Text>
+                          </TouchableOpacity>
+                      </View>
+                  </View> 
+                  <View style={stylesLLLD.card}>
+                      <View style={stylesLLLD.imagemfundo}>
+                          <Image
+                            style={stylesLLLD.imagem}
+                            source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
+                            />
+                      </View>
+                      <View>
+                         <Text style={stylesLLLD.nome}>Casca de bala</Text>
+                         <Text style={stylesLLLD.subnome}>amostradinho</Text>
+                      </View>
+                      <View style={stylesLLLD.baixo}>
+                          <Text style={stylesLLLD.preco}>$00,00</Text>
+                          <TouchableOpacity>
+                            <Text style={stylesLLLD.botao}>+</Text>
+                          </TouchableOpacity>
+                      </View>
+                  </View> 
+                </View>
+                <View style={stylesLLLD.slot}>
+                  <View style={stylesLLLD.card}>
+                      <View style={stylesLLLD.imagemfundo}>
+                          <Image
+                            style={stylesLLLD.imagem}
+                            source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
+                            />
+                      </View>
+                      <View>
+                         <Text style={stylesLLLD.nome}>Casca de bala</Text>
+                         <Text style={stylesLLLD.subnome}>amostradinho</Text>
+                      </View>
+                      <View style={stylesLLLD.baixo}>
+                          <Text style={stylesLLLD.preco}>$00,00</Text>
+                          <TouchableOpacity>
+                            <Text style={stylesLLLD.botao}>+</Text>
+                          </TouchableOpacity>
+                      </View>
+                  </View> 
+                  <View style={stylesLLLD.card}>
+                      <View style={stylesLLLD.imagemfundo}>
+                          <Image
+                            style={stylesLLLD.imagem}
+                            source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
+                            />
+                      </View>
+                      <View>
+                         <Text style={stylesLLLD.nome}>Casca de bala</Text>
+                         <Text style={stylesLLLD.subnome}>amostradinho</Text>
+                      </View>
+                      <View style={stylesLLLD.baixo}>
+                          <Text style={stylesLLLD.preco}>$00,00</Text>
+                          <TouchableOpacity>
+                            <Text style={stylesLLLD.botao}>+</Text>
+                          </TouchableOpacity>
+                      </View>
+                  </View> 
+                </View>
+            </View>
         </View>
    </ScrollView>
   );
@@ -340,9 +356,8 @@ const stylesLLLD = StyleSheet.create({
         marginBottom: 30,
       },
       card:{
-        padding: 20,
-        height: 350,
-
+        padding: 25,
+        height: 350,    
         backgroundColor:"#f9f6f0",
         borderRadius: 30,
         justifyContent:"space-between",
@@ -360,26 +375,32 @@ const stylesLLLD = StyleSheet.create({
       },
       nome:{
         fontSize: 20,
-        fontStyle: "normal",
+        fontWeight:"bold",
       },
       subnome:{
         fontSize: 15,
         color: "#c1c1c1"
       },
       baixo:{
+        marginTop: 10,
         flexDirection: "row",
         width:"100%",
         justifyContent:"space-between"
       },
       preco:{
-        fontSize: 29,
+        fontSize: 24,
+        fontWeight:'bold',
+        display: 'flex',
+        alignItems:'center',
       },
       botao:{
         fontSize: 30,
         backgroundColor: "#f8b75e",
         borderRadius: 11,
-        width: 45,
-        paddingLeft: 12,
+        width: 35,
+        height: 35,
+        display: 'flex',
+        justifyContent:'center',
+        alignItems: "flex-end",
       },
-      
 });
