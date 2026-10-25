@@ -340,7 +340,7 @@ const stylesLLLD = StyleSheet.create({
         marginBottom: 30,
       },
       card:{
-        padding: 20,
+        padding: 25,
         height: 350,
 
         backgroundColor:"#f9f6f0",
