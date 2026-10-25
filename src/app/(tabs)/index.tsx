@@ -1,5 +1,5 @@
-import {View,Text,TextInput,TouchableOpacity,ScrollView,StyleSheet,StatusBar,Image} from 'react-native';
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, ScrollView, StyleSheet, StatusBar, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 
