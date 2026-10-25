@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams, useRouter,Link } from 'expo-router';
 import{banco} from "../../../banco"
 import { JumpingTransition } from 'react-native-reanimated';
+
 type BancoProps={
 idLLLD:number,
 tipoLLLD:string,
@@ -12,19 +13,20 @@ estrelasLLLD:number,
 avaliacaoLLLD:number,
 descriçãoLLLD:string,
 imagemLLLD:string,
-preco1lLLLD:number,
+preco1lLLLD:string,
 }
-type TipoLLLD ="todos" | "tinto" | "branco" | "rosé" | "espumante" ;
+type TipoLLLD ="todos" | "tinto" | "branco" | "rose" | "espumante" ;
 export default function AppLLLD() {
   // push - navegar para outra tela, podendo voltar
   // back - voltar para a tela anterior
   // replace - navegar para outra tela, sem poder voltar
 const [pesquisaLLLD, setPesquisaLLLD] = useState('');
-const [exibirtipo,setExibirtipo]=useState<TipoLLLD>("todos");
-const [exibirtinto,setExibirtinto]=useState<boolean>(false);
-const [exibirbranco,setExibirbranco]=useState<boolean>(false);
-const [exibirrose,setExibirrose]=useState<boolean>(false);
-const [exibirespumante,setExibirespumante]=useState<boolean>(false);
+const [exibirtipo,setExibirtipo]= useState<TipoLLLD>("todos");
+const [exibirtinto,setExibirtinto]= useState<boolean>(false);
+const [exibirbranco,setExibirbranco]= useState<boolean>(false);
+const [exibirrose,setExibirrose]= useState<boolean>(false);
+const [exibirespumante,setExibirespumante]= useState<boolean>(false);
+const [adicionar,setAdicionar]=useState<boolean>(false);
 function tinto() {
     setExibirtinto(!exibirtinto)
   if(!exibirtinto){
@@ -45,6 +47,12 @@ function espumante() {
   if(!exibirespumante){
   }
   }
+  function add() {
+    setAdicionar(!adicionar)
+  if(!adicionar){
+    alert("Você adicionou esse produto no carrinho")
+  }
+  }
 
 
   const exibir =
@@ -54,7 +62,7 @@ function espumante() {
 ? "tinto"
 : exibirtipo === "branco"
 ? "branco"
-: exibirtipo === "rosé"
+: exibirtipo === "rose"
 ? "rosé"
 : "espumante";
 
@@ -65,7 +73,7 @@ const corbotao4LLLD = exibir === "rosé" ? "#f8b75e" : "#f5f5f5";
 const corbotao5LLLD = exibir === "espumante" ? "#f8b75e" : "#f5f5f5";
 const exibirtintoLLLD = exibirtipo === "tinto" || exibirtipo ==="todos"? "flex" : "none";
 const exibirbrancoLLLD = exibirtipo === "branco"|| exibirtipo ==="todos"? "flex" : "none";
-const exibirroseLLLD = exibirtipo === "rosé"||exibirtipo ==="todos"?"flex" : "none";
+const exibirroseLLLD = exibirtipo === "rose"||exibirtipo ==="todos"?"flex" : "none";
 const exibirespumanteLLLD = exibirtipo === "espumante"||exibirtipo ==="todos" ? "flex" : "none";
 return (
 <ScrollView>
@@ -122,7 +130,7 @@ return (
                 <TouchableOpacity style={[stylesLLLD.botao, { backgroundColor: corbotao3LLLD }]} onPress={() => setExibirtipo("branco")}>
                   <Text style={stylesLLLD.textobotao}>branco</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={[stylesLLLD.botao, { backgroundColor: corbotao4LLLD }]} onPress={() => setExibirtipo("rosé")}>
+                <TouchableOpacity style={[stylesLLLD.botao, { backgroundColor: corbotao4LLLD }]} onPress={() => setExibirtipo("rose")}>
                   <Text style={stylesLLLD.textobotao}>rosé</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[stylesLLLD.botao, { backgroundColor: corbotao5LLLD }]} onPress={() => setExibirtipo("espumante")}>
@@ -133,13 +141,13 @@ return (
     </View>
     <View style={[stylesLLLD.maintinto, { display: exibirtintoLLLD }]}>
     
-                <View style={stylesLLLD.slot}>
+              <View style={stylesLLLD.slot}>
               <Link href={"/produto/1"}>
                   <View style={stylesLLLD.card}>
                       <View style={stylesLLLD.imagemfundo}>
                           <Image
+                            source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjGf7vr04JQxNMXQSyFPEdYi3KA6odQmU1bf7exwftuw&s=10"}}
                             style={stylesLLLD.imagem}
-                            source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OBPZSX7230mrR-GiP_b51YwgBq36T1_dPRLU05dkUQ&s=10"}}
                             />
                       </View>
                       <View>
@@ -148,12 +156,12 @@ return (
                       </View>
                       <View style={stylesLLLD.baixo}>
                           <Text style={stylesLLLD.preco}>$00,00</Text>
-                          <TouchableOpacity>
+                          <TouchableOpacity onPress={add}>
                             <Text style={stylesLLLD.botaocompra}>+</Text>
                           </TouchableOpacity>
                       </View>
                   </View>
-                  </Link>
+                </Link>
                   <Link href={"/produto/2"}>
                   <View style={stylesLLLD.card}>
                       <View style={stylesLLLD.imagemfundo}>
