@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import {Text,View,StyleSheet,Image,TouchableOpacity,ScrollView,} from "react-native";
-import { useLocalSearchParams } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import { posts } from "../../../posts";
 import AntDesign from '@expo/vector-icons/AntDesign';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 type TamanhoLLLD = "1L" | "750ml" | "500ml";
 
 export default function ProdutosLLLD() {
-
-
+  const router = useRouter(); 
+  
   const { idLLLD } = useLocalSearchParams<{ idLLLD: string }>();
 
 
@@ -16,18 +17,20 @@ export default function ProdutosLLLD() {
     (itemLLLD) => String(itemLLLD.idLLLD) === idLLLD
   );
   const [tamanhoLLLD, setTamanhoLLLD] = useState<TamanhoLLLD>("1L");
-  const [apertadoLLLD, setApertadoLLLD] = useState("#ffffff");
-  const [exibir,setExibir]=useState<boolean>(false);
+  const [exibirestrelaLLLD,setExibirestrelaLLLD]=useState<boolean>(false);
+  const [exibircoracaoLLLD,setExibircoracaoLLLD]=useState<boolean>(false);
   
  function avaliar() {
-    if (exibir) {
+    if (exibirestrelaLLLD) {
       setAvaliacao((valorAtual) => valorAtual - 1);
     } else {
       setAvaliacao((valorAtual) => valorAtual + 1);
     }
 
-    setExibir((estadoAtual) => !estadoAtual);
-  
+    
+    
+    setExibirestrelaLLLD((estadoAtual) => !estadoAtual);
+    
   }
   if (!produtoLLLD) {
     return (
@@ -38,18 +41,31 @@ export default function ProdutosLLLD() {
 }
 let numeroAvaliacoesLLLD=produtoLLLD.avaliacaoLLLD;
 const [avaliacao,setAvaliacao]=useState<number>(numeroAvaliacoesLLLD || 0);
-  const precoLLLD =
-    tamanhoLLLD === "1L"
-      ? produtoLLLD?.preco1lLLLD
-      : tamanhoLLLD === "750ml"
-      ? produtoLLLD?.preco750mlLLLD
-      : produtoLLLD?.preco500mlLLLD;
-  const corbotao1LLLD = tamanhoLLLD === "1L" ? "#f8b75e" : "#ffffff";
-  const corbotao2LLLD = tamanhoLLLD === "750ml" ? "#f8b75e" : "#ffffff";
-  const corbotao3LLLD = tamanhoLLLD === "500ml" ? "#f8b75e" : "#ffffff";
+const precoLLLD =
+tamanhoLLLD === "1L"
+? produtoLLLD?.preco1lLLLD
+: tamanhoLLLD === "750ml"
+? produtoLLLD?.preco750mlLLLD
+: produtoLLLD?.preco500mlLLLD;
+const corbotao1LLLD = tamanhoLLLD === "1L" ? "#f8b75e" : "#ffffff";
+const corbotao2LLLD = tamanhoLLLD === "750ml" ? "#f8b75e" : "#ffffff";
+const corbotao3LLLD = tamanhoLLLD === "500ml" ? "#f8b75e" : "#ffffff";
+
+function curtir() {
+    setExibircoracaoLLLD(!exibircoracaoLLLD)
+  if(!exibircoracaoLLLD){
+    alert("Você favoritou este produto")
+  }
+  }
+
   
-  return (
+return (
     <ScrollView contentContainerStyle={styles.containerLLLD}>
+      <View style={styles.headLLLD}>
+        <Text onPress={router.back}><FontAwesome5 name="arrow-left" size={24} color="black" /></Text>
+        <Text onPress={curtir}>{exibircoracaoLLLD ? <AntDesign name="heart" size={24} color="red" /> : <AntDesign name="heart" size={24} color="black" /> }</Text>
+      </View>
+      
       <Image
         source={{ uri: produtoLLLD.imagemLLLD }}
         style={styles.imageLLLD}
@@ -58,7 +74,7 @@ const [avaliacao,setAvaliacao]=useState<number>(numeroAvaliacoesLLLD || 0);
       <Text style={styles.nomeLLLD}>{produtoLLLD.nomeLLLD}</Text>
 
       <Text style={styles.avaliacaoLLLD} onPress={avaliar}>
-        {exibir ? <AntDesign name="star" size={24} color="#FFDE21" /> : <AntDesign name="star" size={24} color="#ffffff" />}
+        {exibirestrelaLLLD ? <AntDesign name="star" size={24} color="#FFDE21" /> : <AntDesign name="star" size={24} color="#ffffff" />}
         <Text style={styles.avaliacaoLLLD}>
           {" "}{produtoLLLD.estrelasLLLD} ({avaliacao})
         </Text>
@@ -93,6 +109,12 @@ const [avaliacao,setAvaliacao]=useState<number>(numeroAvaliacoesLLLD || 0);
 }
 
 const styles = StyleSheet.create({
+  headLLLD:{
+    display:"flex",
+    flexDirection:"row",
+    justifyContent:"space-between",
+    marginBottom:20,
+  },
   containerLLLD: {
     flexGrow: 1,
     padding: 16,

@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
-import { Link, useRouter } from 'expo-router';
+import { useRouter } from 'expo-router';
 
-export default function Home() {
+export default function HomeLLLD() {
   // push - navegar para outra tela, podendo voltar
   // back - voltar para a tela anterior
   // replace - navegar para outra tela, sem poder voltar
@@ -21,20 +21,26 @@ export default function Home() {
       <View style={styles.bottomContainer}>
         <Text style={styles.title}>Venha tomar um vinho com Buddy!</Text>
         <Text style={styles.texto_padrao}>Buddy é o seu amigo ideal para degustar vinhos!</Text>
-        <Link href="/produto/3" asChild>
-    <Text>Ver Produto</Text>
-  </Link>
+        <TouchableOpacity
+          style={styles.botao}
+          onPress={()=>router.replace('/auth/login')}
+        >
+          <Text style={styles.texto_botao}>Iniciar</Text>
+        </TouchableOpacity>
       </View>
 
-    </View>
+    </View> 
+
+
+    
+
   );
 }
 
 const styles = StyleSheet.create({
   image: {
-    width: "100%",
-    height: 400,
-    objectFit: 'contain',
+    width: '100%',
+    height: '100%',
   },
   imageContainer: {
     width: '100%',
