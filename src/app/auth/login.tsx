@@ -22,18 +22,13 @@ export default function LoginLLLD() {
       return;
     }
 
-    if(!emailLLLD.includes('@')) {
-      setErroLLLD('Por favor, insira um email válido.');
+    if(emailLLLD != 'buddy@gmail.com') {
+      setErroLLLD('Email incorreto.');
       return;
     }
 
-    if (senhaLLLD.length < 8) {
-      setErroLLLD('A senha deve ter pelo menos 8 caracteres.');
-      return;
-    }
-
-    if(emailLLLD != 'buddy@gmail.com' || senhaLLLD != 'buddy123') {
-      setErroLLLD('Email ou senha incorretos.');
+    if(senhaLLLD != 'buddy123') {
+      setErroLLLD('Senha incorreta.');
       return;
     }
 
@@ -73,7 +68,6 @@ export default function LoginLLLD() {
                     if (erroLLLD) setErroLLLD('');
                 }} />
             </View>
-            <Text style={{color: '#c1c1c1', fontSize: 16, textAlign: 'left', marginBottom: 10}}>Mínimo de 8 caracteres</Text>
 
         </View>
 
@@ -113,6 +107,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     color: '#c1c1c1',
     fontSize: 16,
+    fontFamily: "Arvo_400Regular",
   },
   icon: {
     marginRight: 10,
@@ -139,12 +134,14 @@ const styles = StyleSheet.create({
   texto_botao: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#fff'
+    color: '#fff',
+    fontFamily: "Arvo_400Regular",
   },
   erro: {
     color: 'red',
     fontSize: 16,
     marginBottom: 10,
     fontWeight: '600',
+    fontFamily: "Arvo_400Regular",
   }
 });

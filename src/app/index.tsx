@@ -60,10 +60,12 @@ const styles = StyleSheet.create({
     fontSize: 28,
     fontWeight: 'bold',
     color: '#f8b75e',
+    fontFamily:"Arvo_700Bold",
   },
   texto_padrao: {
     fontSize: 18,
     color: '#c1c1c1',
+    fontFamily: "Arvo_400Regular",
   },
   botao:{
     backgroundColor: '#f8b75e',
@@ -77,6 +79,7 @@ const styles = StyleSheet.create({
   texto_botao: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#fff'
+    color: '#fff',
+    fontFamily: "Arvo_400Regular",
   }
 });

@@ -845,9 +845,10 @@ const stylesLLLD = StyleSheet.create({
     alignItems: 'center',
   },
   nomeLoja: {
-    color: '#FFFFFF',
+    color: '#f8b75e',
     fontSize: 23,
     fontWeight: 'bold',
+    fontFamily:"Arvo_700Bold",
   },
   logo: {
     width: 58,
@@ -885,6 +886,7 @@ const stylesLLLD = StyleSheet.create({
     fontSize: 16,
     color: '#333333',
     marginLeft: 13,
+    fontFamily: "Arvo_400Regular",
   },
   botaoFiltro: {
     width: 56,
@@ -920,6 +922,7 @@ const stylesLLLD = StyleSheet.create({
     fontSize: 15,
     color: '#49413E',
     fontWeight: '500',
+    fontFamily: "Arvo_400Regular",
   },
 
   maintinto:{
@@ -973,10 +976,12 @@ const stylesLLLD = StyleSheet.create({
       nome:{
         fontSize: 18,
         fontWeight:"bold",
+        fontFamily: "Arvo_400Regular",
       },
       subnome:{
         fontSize: 15,
-        color: "#c1c1c1"
+        color: "#c1c1c1",
+        fontFamily: "Arvo_400Regular",
       },
       baixo:{
         marginTop: 10,
@@ -989,6 +994,7 @@ const stylesLLLD = StyleSheet.create({
         fontWeight:'bold',
         display: 'flex',
         alignItems:'center',
+        fontFamily: "Arvo_400Regular",
       },
       botaocompra:{
         fontSize: 30,
