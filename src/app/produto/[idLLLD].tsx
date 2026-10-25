@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {Text,View,StyleSheet,Image,TouchableOpacity,ScrollView,} from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { posts } from "../../../posts";
+import { banco } from "../../../banco";
 import AntDesign from '@expo/vector-icons/AntDesign';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
@@ -13,7 +13,7 @@ export default function ProdutosLLLD() {
   const { idLLLD } = useLocalSearchParams<{ idLLLD: string }>();
 
 
-  const produtoLLLD = posts.find(
+  const produtoLLLD = banco.find(
     (itemLLLD) => String(itemLLLD.idLLLD) === idLLLD
   );
   const [tamanhoLLLD, setTamanhoLLLD] = useState<TamanhoLLLD>("1L");
@@ -87,13 +87,13 @@ return (
       <Text style={styles.tituloLLLD}>Tamanho</Text>
 
       <View style={styles.botoesLLLD}>
-            <TouchableOpacity style={[styles.botao1LLLD, { backgroundColor: corbotao1LLLD }]} onPress={() => setTamanhoLLLD("1L")}>
+            <TouchableOpacity style={[styles.botaoLLLD, { backgroundColor: corbotao1LLLD }]} onPress={() => setTamanhoLLLD("1L")}>
               <Text style={styles.textobotaoLLLD}>1L</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={[styles.botao2LLLD, { backgroundColor: corbotao2LLLD }]} onPress={() => setTamanhoLLLD("750ml")}>
+            <TouchableOpacity style={[styles.botaoLLLD, { backgroundColor: corbotao2LLLD }]} onPress={() => setTamanhoLLLD("750ml")}>
               <Text style={styles.textobotaoLLLD}>750ml</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={[styles.botao3LLLD, { backgroundColor: corbotao3LLLD }]} onPress={() => setTamanhoLLLD("500ml")}>
+            <TouchableOpacity style={[styles.botaoLLLD, { backgroundColor: corbotao3LLLD }]} onPress={() => setTamanhoLLLD("500ml")}>
               <Text style={styles.textobotaoLLLD}>500ml</Text>
             </TouchableOpacity>
       </View>
@@ -164,29 +164,12 @@ const styles = StyleSheet.create({
     gap: 10,
     justifyContent: "space-between",
   },
-  botao1LLLD: {
+  botaoLLLD: {
     paddingVertical: 10,
     paddingHorizontal: 40,
     borderRadius: 8,
     borderWidth: 1,
     borderColor: "#741b47",
-  },
-  botao2LLLD: {
-    paddingVertical: 10,
-    paddingHorizontal: 40,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: "#741b47",
-  },
-  botao3LLLD: {
-    paddingVertical: 10,
-    paddingHorizontal: 40,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: "#741b47",
-  },
-  botaoSelecionadoLLLD: {
-    backgroundColor: "#f8b75e",
   },
   textobotaoLLLD: {
     fontSize: 14,
