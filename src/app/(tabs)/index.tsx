@@ -29,7 +29,7 @@ return (
      <View style={stylesLLLD.logo}>
       <Image
         source={require('../../../assets/logo_buddy.jpeg')}
-        style={{ width: 45, height: 45 }}
+        style={{ width: 58, height: 58, borderRadius: 10 }}
         resizeMode="contain"></Image>
         </View>
           </View>
