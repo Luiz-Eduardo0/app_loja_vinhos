@@ -63,6 +63,10 @@ const corbotao2LLLD = exibir === "tinto" ? "#f8b75e" : "#f5f5f5";
 const corbotao3LLLD = exibir === "branco" ? "#f8b75e" : "#f5f5f5";
 const corbotao4LLLD = exibir === "rosé" ? "#f8b75e" : "#f5f5f5";
 const corbotao5LLLD = exibir === "espumante" ? "#f8b75e" : "#f5f5f5";
+const exibirtintoLLLD = exibirtipo === "tinto" || exibirtipo ==="todos"? "flex" : "none";
+const exibirbrancoLLLD = exibirtipo === "branco"|| exibirtipo ==="todos"? "flex" : "none";
+const exibirroseLLLD = exibirtipo === "rosé"||exibirtipo ==="todos"?"flex" : "none";
+const exibirespumanteLLLD = exibirtipo === "espumante"||exibirtipo ==="todos" ? "flex" : "none";
 return (
 <ScrollView>
   <View style={stylesLLLD.container}>
@@ -73,7 +77,7 @@ return (
      <View style={stylesLLLD.logo}>
       <Image
         source={require('../../../assets/logo_buddy.jpeg')}
-        style={{ width: 45, height: 45 }}
+        style={{ width: 58, height: 58, borderRadius: 10 }}
         resizeMode="contain"></Image>
         </View>
           </View>
@@ -127,7 +131,7 @@ return (
           </View>
     </ScrollView>
     </View>
-    <View style={stylesLLLD.maintinto}>
+    <View style={[stylesLLLD.maintinto, { display: exibirtintoLLLD }]}>
     
                 <View style={stylesLLLD.slot}>
               <Link href={"/produto/1"}>
@@ -298,7 +302,7 @@ return (
                   </Link>
         </View>
         </View>
-    <View style={stylesLLLD.mainbranco}>
+    <View style={[stylesLLLD.mainbranco, { display: exibirbrancoLLLD }]}>
     
                 <View style={stylesLLLD.slot}>
               <Link href={"/produto/9"}>
@@ -469,7 +473,7 @@ return (
                   </Link>
         </View>
         </View>
-    <View style={stylesLLLD.mainrose}>
+    <View style={[stylesLLLD.mainrose, { display: exibirroseLLLD }]}>
     
                 <View style={stylesLLLD.slot}>
               <Link href={"/produto/17"}>
@@ -640,7 +644,7 @@ return (
                   </Link>
         </View>
         </View>
-    <View style={stylesLLLD.mainespumante}>
+    <View style={[stylesLLLD.mainespumante, { display: exibirespumanteLLLD }]}>
     
                 <View style={stylesLLLD.slot}>
               <Link href={"/produto/25"}>
@@ -914,7 +918,7 @@ const stylesLLLD = StyleSheet.create({
         flexDirection: "column",
         justifyContent:"space-between",
         padding: 10,
-        backgroundColor:"#741b47"
+        backgroundColor:"#741b47",
       },
   mainbranco:{
         flexDirection: "column",
